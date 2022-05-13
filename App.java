@@ -1,10 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import modelo.Cliente;
 import modelo.Existencia;
+import servicio.ClienteServicio;
 import servicio.ExistenciaServicio;
 
 // package ""
+
+
 
 public class App {
 
@@ -70,6 +74,11 @@ public class App {
 
         exsrv.mostrarListado(existencias);
 
+
+        Cliente john=new Cliente("john","sunset blv");
+        
+        ClienteServicio clisrv=new ClienteServicio();
+        clisrv.mostrar(john);
 
 
     }
